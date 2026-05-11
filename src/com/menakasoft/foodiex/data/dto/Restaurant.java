@@ -12,7 +12,7 @@ public class Restaurant {
     private boolean isOpen;
     private int deliveryTime;
 
-    Restaurant(){
+    public Restaurant(){
 
     }
 

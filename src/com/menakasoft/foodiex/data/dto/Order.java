@@ -16,10 +16,20 @@ public class Order {
     private double totalPrice;
     private OrderStatus status;
     private PaymentStatus paymentStatus;
+    private long createdAt;
 
     public Order() {
 
     }
+
+    public long getCreatedAt() {
+        return createdAt;
+    }
+
+    public void setCreatedAt(long CreatedAt) {
+        this.createdAt=createdAt;
+    }
+
 
     public enum OrderStatus {
         PLACED,
