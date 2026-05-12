@@ -7,7 +7,7 @@ public class FoodItem {
     private String description;
     private double price;
     private String category;
-    private static boolean isAvailable;
+    private boolean isAvailable;
     private Long preparationTime;
     private Long restaurantId;
 
@@ -58,7 +58,7 @@ public class FoodItem {
         this.category = category;
     }
 
-    public static boolean isAvailable() {
+    public  boolean isAvailable() {
         return isAvailable;
     }
 

@@ -16,20 +16,28 @@ public class Order {
     private double totalPrice;
     private OrderStatus status;
     private PaymentStatus paymentStatus;
-    private long createdAt;
+    private Long createdAt;
+    private String restaurantName;
 
     public Order() {
 
     }
 
-    public long getCreatedAt() {
+    public Long getCreatedAt() {
         return createdAt;
     }
 
-    public void setCreatedAt(long CreatedAt) {
+    public void setCreatedAt(Long createdAt) {
         this.createdAt=createdAt;
     }
 
+    public String getRestaurantName() {
+        return restaurantName;
+    }
+
+    public void setRestaurantName(String restaurantName) {
+        this.restaurantName = restaurantName;
+    }
 
     public enum OrderStatus {
         PLACED,

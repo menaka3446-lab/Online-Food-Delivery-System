@@ -1,5 +1,6 @@
 package com.menakasoft.foodiex.data.dto;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Cart {
@@ -91,5 +92,4 @@ public class Cart {
     public void setTotalAmount(double totalAmount) {
         this.totalAmount = totalAmount;
     }
-
 }

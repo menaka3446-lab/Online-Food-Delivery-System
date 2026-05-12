@@ -3,12 +3,13 @@ package com.menakasoft.foodiex.data.dto;
 public class OrderItem {
 
     private Long id;
-    private Long foodItemId;
+    private Long foodId;
     private String foodName;
     private double price;
     private int quantity;
+    private double total;
 
-    OrderItem(){
+    public OrderItem(){
 
     }
 
@@ -20,12 +21,12 @@ public class OrderItem {
         this.id = id;
     }
 
-    public Long getFoodItem() {
-        return foodItemId;
+    public Long getFoodId() {
+        return foodId;
     }
 
-    public void setFoodItemId(Long foodItemId) {
-        this.foodItemId = foodItemId;
+    public void setFoodId(Long foodId) {
+        this.foodId = foodId;
     }
 
     public String getFoodName() {
@@ -50,5 +51,14 @@ public class OrderItem {
 
     public void setQuantity(int quantity) {
         this.quantity = quantity;
+    }
+
+
+    public double getTotal() {
+        return total;
+    }
+
+    public void setTotal(double total) {
+        this.total = total;
     }
 }

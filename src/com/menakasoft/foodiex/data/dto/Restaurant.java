@@ -3,7 +3,7 @@ package com.menakasoft.foodiex.data.dto;
 import java.util.List;
 
 public class Restaurant {
-    private int id;
+    private long id;
     private String name;
     private String location;
     private String phoneNumber;
@@ -16,11 +16,11 @@ public class Restaurant {
 
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 

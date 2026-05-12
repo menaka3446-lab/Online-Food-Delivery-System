@@ -7,7 +7,8 @@ public class CartItem {
     private double price;
     private int quantity;
 
-    CartItem() {
+
+    public CartItem() {
 
     }
 
@@ -50,4 +51,10 @@ public class CartItem {
     public void setPrice(double price) {
         this.price = price;
     }
+
+    public double getTotal() {
+        return price * quantity;
+    }
+
+
 }

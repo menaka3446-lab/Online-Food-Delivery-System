@@ -7,10 +7,11 @@ import java.util.List;
 
 public class FoodieXDB {
     private FoodieXDB() {
+        seedData();
 
     }
 
-    private static FoodieXDB foodieXDB = null;
+    private static volatile FoodieXDB foodieXDB = null;
 
     public static final FoodieXDB getInstance() {
         if (foodieXDB == null) {
@@ -100,7 +101,7 @@ public class FoodieXDB {
         List<FoodItem> result = new ArrayList<>();
         if (restaurantId == null) return result;
         for (FoodItem foodItem : foodItems) {
-            if (restaurantId.equals(foodItem.getRestaurantId()) && FoodItem.isAvailable()) {
+            if (restaurantId.equals(foodItem.getRestaurantId()) && foodItem.isAvailable()) {
                 result.add(foodItem);
             }
         }
@@ -195,6 +196,8 @@ public class FoodieXDB {
         r2.setDeliveryTime(45);
         addRestaurant(r2);
 
+
+
         String[][] menuR1 = {
                 {"Idli (2 pcs)", "Soft idli with sambar & chutney", "30", "Breakfast", "10"},
                 {"Dosa", "Crispy plain dosa", "40", "Breakfast", "8"},
@@ -234,6 +237,8 @@ public class FoodieXDB {
             addFoodItem(f);
         }
     }
+
+
 
 
     }
